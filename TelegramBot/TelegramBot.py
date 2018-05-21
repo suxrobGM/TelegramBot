@@ -45,10 +45,10 @@ def textMessage(bot, update):
     # Если есть ответ от бота - присылаем юзеру, если нет - бот его не понял
     if response:
         bot.send_message(chat_id=update.message.chat_id, text=response)
+        #log_messages(bot_message=response, update=update)
     else:
         bot.send_message(chat_id=update.message.chat_id, text="Я Вас не совсем понял!")
-    
-    log_messages(bot_message=response, update=update)
+        #log_messages(bot_message="Я Вас не совсем понял!", update=update)
 
 
 
