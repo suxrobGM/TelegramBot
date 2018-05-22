@@ -1,1 +1,1 @@
-web: python TelegramBot\TelegramBot.py
+web: python TelegramBot.py
